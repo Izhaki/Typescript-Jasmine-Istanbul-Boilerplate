@@ -12,4 +12,5 @@ The coverage report shows the typescript (rather than transpiled) code. That is,
     $ npm run test:coverage
         
 Sample output:
+
 ![image](https://cloud.githubusercontent.com/assets/880132/16820312/4fe60e10-4948-11e6-8c5a-ddc9376d3918.png)    
