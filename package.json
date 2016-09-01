@@ -4,8 +4,8 @@
   "description": "An example node project to produce coverage of TypeScript sources using Jasmine.",
   "scripts": {
     "postinstall": "typings install dt~jasmine --save --global",
-    "test": "ts-node node_modules/.bin/jasmine JASMINE_CONFIG_PATH=jasmine.json",
-    "test:coverage": "ts-node node_modules/istanbul/lib/cli.js cover -e .ts  -x \"*.d.ts\" -x \"*.spec.ts\" node_modules/.bin/jasmine -- JASMINE_CONFIG_PATH=jasmine.json"
+    "test": "ts-node node_modules/jasmine/bin/jasmine.js JASMINE_CONFIG_PATH=jasmine.json",
+    "test:coverage": "ts-node node_modules/istanbul/lib/cli.js cover -e .ts  -x \"*.d.ts\" -x \"*.spec.ts\" node_modules/jasmine/bin/jasmine.js -- JASMINE_CONFIG_PATH=jasmine.json"
   },
   "repository": {
     "type": "git",
