@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "An example node project to produce coverage of TypeScript sources using Jasmine.",
   "scripts": {
-    "postinstall": "typings install dt~jasmine --save --global",
     "test": "ts-node node_modules/jasmine/bin/jasmine.js JASMINE_CONFIG_PATH=jasmine.json",
     "test:coverage": "ts-node node_modules/istanbul/lib/cli.js cover -e .ts  -x \"*.d.ts\" -x \"*.spec.ts\" node_modules/jasmine/bin/jasmine.js -- JASMINE_CONFIG_PATH=jasmine.json"
   },
@@ -23,11 +22,11 @@
   "author": "Izhaki",
   "license": "MIT",
   "devDependencies": {
+    "@types/jasmine": "^2.5.35",
     "istanbul": "^1.1.0-alpha.1",
-    "jasmine": "^2.4.1",
-    "ts-node": "^0.9.3",
-    "typescript": "^1.8.10",
-    "typings": "^1.3.1"
+    "jasmine": "^2.5.2",
+    "ts-node": "~1.6.0",
+    "typescript": "^2.0.3"
   },
   "bugs": {
     "url": "https://github.com/Izhaki/Typescript-Jasmine-Istanbul-Boilerplate/issues"
